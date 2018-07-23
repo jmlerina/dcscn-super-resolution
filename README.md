@@ -7,15 +7,6 @@ See the original project for more info.
 Some pre-trained models are included.
 
 ```
-# evaluating set14 dataset
-python evaluate.py --test_dataset=set14 --save_results=true
-
-# evaluating set5 dataset with small model
-python evaluate.py --test_dataset=set5 --save_results=true --layers=8 --filters=96
-
-# evaluating all(set5,set14,bsd100) dataset
-python evaluate.py --test_dataset=all
-
-# evaluate our compact version of DCSCN (c-DCSCN)
-python evaluate.py --scale=2 --layers=7 --filters=32 --min_filters=8 --filters_decay_gamma=1.2 --nin_filters=24 --nin_filters2=8 --reconstruct_layers=0 --self_ensemble=1 --batch_image_size=32 --pixel_shuffler_filters=1 --test_dataset=all
+# evaluating dataset
+python evaluate.py --test_dataset=demo --save_results=true
 ```
